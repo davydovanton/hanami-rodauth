@@ -1,7 +1,5 @@
 require "hanami/rodauth/version"
+require_relative "cli_sub_commands/generate"
 
 module Hanami
-  module Rodauth
-    # Your code goes here...
-  end
 end
