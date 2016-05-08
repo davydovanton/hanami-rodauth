@@ -2,16 +2,10 @@ require 'test_helper'
 require 'hanami/cli'
 
 describe Hanami::Cli do
-  let(:default_options) do
-    { 'architecture' => 'container' }
-  end
-
-
-  it 'calls the generator with application name and defaults' do
+  it 'calls the generator options' do
     ARGV.replace(%w{generate auth})
     assert_cli_calls_command(Hanami::Commands::Auth, {}) 
   end
-
 
   def assert_cli_calls_command(command_class, *expected_arguments)
     instance_mock = Minitest::Mock.new

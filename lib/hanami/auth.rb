@@ -8,12 +8,11 @@ module Hanami
         long_desc <<-EOS
         EOS
         def auth
-          # if options[:help]
-          #   invoke :help, ['app']
-          # else
-          #   require 'hanami/commands/generate/app'
+          if options[:help]
+            invoke :help, ['auth']
+          else
             Hanami::Commands::Auth.new(options).start
-          # end
+          end
         end
       end
     end

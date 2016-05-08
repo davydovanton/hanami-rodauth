@@ -9,11 +9,6 @@ module Hanami
       end
 
       def start
-        # if @environment.container?
-        # else
-          # puts 'error'
-        # end
-        ''
       end
     end
   end
