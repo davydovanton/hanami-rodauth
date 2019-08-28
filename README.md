@@ -1,4 +1,7 @@
 # Hanami::Rodauth
+
+**This repository is no longer maintain**
+
 Simple integration rodauth gem and hanami application.
 
 ## Installation
